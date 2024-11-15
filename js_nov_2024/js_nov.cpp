@@ -83,7 +83,8 @@ long countTruth(long N) {
 }
 
 int main() { 
-  long N = 100000000000; 
+  long N = 100000000; 
+
 
   cout << "N: " << N << endl;
 
