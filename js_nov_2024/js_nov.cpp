@@ -30,7 +30,7 @@ bool doesEqExist(point blue, point red) {
 
   // case 2:
   // 1 - blue_x < blue_x and blue_y and 1 - blue_y 
-  else if (blue.x > 0.5 && 1 - blue.x < blue.y && 1 - blue.x < blue.y) {
+  else if (blue.x > 0.5 && 1 - blue.x < blue.y && 1 - blue.x < 1 - blue.y) {
     // 2a. red_y <= blue_y
     if(red.y <= blue.y) {
       return dist(1, red.x, 0, red.y) <= dist(1, blue.x, 0, blue.y) && dist(1, red.x, 1, red.y) > dist(1, blue.x, 1, blue.y);
